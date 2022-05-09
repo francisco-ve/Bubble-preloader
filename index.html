@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey to the metaverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="speaner">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <main>
+        <video autoplay muted loop>
+            <source src="./Copia de video-1-release.mp4">
+        </video>
+   
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(window).ready(function(){
+            $('span').addClass("run_animation");
+
+            setTimeout(
+                function(){
+                    $("span").removeClass("run_animation");
+                    $(".container").css("display", "none")
+
+                }, 3000)
+        })
+
+    </script>
+
+</body>
+</html>
